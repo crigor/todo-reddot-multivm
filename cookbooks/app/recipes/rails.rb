@@ -62,5 +62,5 @@ end
 
 template "/data/#{app}/current/config/database.yml" do
   source "database.yml.erb"
-  variables :app => app, :environment => "development"
+  variables :app => app, :environment => "development", :db_host => node[:db_host]
 end

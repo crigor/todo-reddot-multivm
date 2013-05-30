@@ -7,6 +7,11 @@ service "postgresql" do
   action :start
 end
 
+template "/etc/postgresql/9.1/main/postgresql.conf" do
+  source "postgresql.conf.erb"
+  notifies :restart, resources(:service => "postgresql"), :immediate
+end
+
 template "/etc/postgresql/9.1/main/pg_hba.conf" do
   source "pg_hba.conf.erb"
   notifies :reload, resources(:service => "postgresql"), :immediate
