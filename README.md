@@ -8,9 +8,9 @@ The Vagrantfile will create two virtual machines.
 - Install Vagrant 1.2.2 from http://downloads.vagrantup.com
 - Run the following commands
 
-        vagrant box add vagrant-debian-wheezy http://crigor.com/rubykaigi/vagrant-debian-wheezy.box
-        git clone git://github.com/crigor/todo-rubykaigi-multivm.git
-        cd todo-rubykaigi-multivm
+        vagrant box add vagrant-debian-wheezy http://crigor.com/reddot/vagrant-debian-wheezy.box
+        git clone git://github.com/crigor/todo-reddot-multivm.git
+        cd todo-reddot-multivm
         vagrant up
 
 Sample output of the vagrant up command that creates two VMs can be found at https://gist.github.com/crigor/5671882.
